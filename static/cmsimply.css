@@ -1,8 +1,8 @@
-.container {
+﻿.container {
   position: relative;
 }
 header{
-  background-image:url("https://img.buzzfeed.com/buzzfeed-static/static/2015-01/28/15/enhanced/webdr10/anigif_enhanced-14809-1422475942-9.gif");
+  background-image:url("http://pic1.sc.chinaz.com/files/pic/pic9/201207/xpic5764.jpg");
   padding: 30px;
 }
 confmenu
@@ -201,6 +201,7 @@ background-color: white;
 width: 195px;
 }
 body {
-  margin-bottom: 120px;
+  margin-bottom: 10px;
+
 }
 
