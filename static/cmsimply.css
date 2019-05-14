@@ -2,7 +2,7 @@
   position: relative;
 }
 header{
-   background-image:url("https://images.unsplash.com/photo-1521710927254-3dd9ef96a3fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1be01f4c82c85cf399cb66445320a9b&w=1000&q=80");
+   background-image:fff
      background-size: 100%,100%,100%,100%;
   background-position: top 0px right 0px , top 470px right 1272px, top 10px right -120px;
   background-repeat:repeat,no-repeat,no-repeat,no-repeat;
@@ -205,7 +205,7 @@ background-color: white;
 width: 195px;
 }
 body {
- background-image:url("https://images.unsplash.com/photo-1521710927254-3dd9ef96a3fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1be01f4c82c85cf399cb66445320a9b&w=1000&q=80");
+ background-image:ffff
      background-size: 100%,100%,100%,100%;
   background-position: top 0px right 0px , top 470px right 1272px, top 10px right -120px;
   background-repeat:repeat,no-repeat,no-repeat,no-repeat;
