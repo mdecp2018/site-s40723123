@@ -67,10 +67,6 @@
 <p><strong>Insert/edit Code</strong>:將文字轉換為Python/C++/Java......等程式語言</p>
 <p><img alt="" height="418" src="/images/edit(insert code).JPG" width="650"/></p>
 <h1>Flag</h1>
-<p><!-- 導入 Brython 標準程式庫 -->
-<script src="/static/brython.js"></script>
-<script src="/static/brython_stdlib.js"></script>
-</p>
 <p>解決方式一：</p>
 <ol>
 <ul>
@@ -80,28 +76,20 @@
 </ol>
 <p>            <img caption="false" height="161" src="https://mdewcm2019.github.io/wcm2019-task-g4/images/chrome_2019-05-07_17-25-09.png" width="450"/></p>
 <ol>
+<ol>
 <li>執行 python wsgi.py 進行動態編輯</li>
 <li>到有問題頁面進行編輯</li>
-<li>在Source code 的狀態底下將
-<div>
+<li>在Source code 的狀態底下將</li>
+</ol>
+</ol>
 <div class="syntaxhighlighter html" id="highlighter_666876">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
 <div class="line number1 index0 alt2">1</div>
 <div class="line number2 index1 alt1">2</div>
-</td>
-<td class="code">
 <div class="container">
 <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">script</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"/get_page/static/brython.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
 <div class="line number2 index1 alt1"><code class="html plain">&lt;</code><code class="html keyword">script</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"/get_page/static/brython_stdlib.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
+<table border="0" cellpadding="0" cellspacing="0"></table>
 </div>
 <p>將/get_pageg 刪除，變成底下的路徑</p>
 <div>
@@ -124,12 +112,11 @@
 </table>
 </div>
 </div>
-</li>
-</ol>
 <ul>
 <li>原因：無法正確讀取到 brython</li>
 </ul>
 <p>解決方式二：</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c5DvTkL2Tgg" width="560"></iframe></p>
 <ol>
 <li>先執行<img alt="" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAAUCAYAAACKy8MYAAAEWklEQVRoQ+2ZXWhbZRjHf/lY41YdnVAWxVZlLRodFVlZu+5CEQquiLjIsOsYwoT2YkrF0RvRDocfF2XSwPxoLgRxblihG7JZ8WKbQmR1m2xlrmjL1jpY1ZYuZWvanHwcOV/pSXJy8hbTSWwO5Oa873mfj9/z/J9ziKPvkixTuooiAw4F1qb1ReHrineyBKuISsAWVt/b7bahPLtrLw8++kQRhVvcruaFFQgELCMcGBhAdq9mjXdDCdgdqgEhWENDQ2nuNDQ0oMDy+/18ffwka6t8VNU+nsPlQd73HuepP/vYeoeC0sz8V3aXL0ghWFbmFVjGNSO5aWp5qYhgjXH0uZfhUIidDy1fcgt9shCszM7atHkLN+ckPKucVKxZRfDLYyVYhSZjcZ4QLPNzoauzfDc8yeWJKWJSlA2V5fh9q6n0bSl11jIDE4Jl7qxRHmDk+gzD41PEpagKrKe1Ds/9gjNrPMCextcZ1gPzH5F58xlAuf8qvHOikyp1zSxV+vw5Ap1tQXW17sAon7XX6Kco6y0YwqytjWqz0vIZOxm0OsvaDrQTsJzFxvlvca1x0S8tVuX8d3n4rFmCxearECw1ddNRTly8wdx8lPlolPCtCL/98TcxSeLHbi8eZ5gJ2c/0gjujvtIdCQUDVLfrQFRwV3hFCTgvrBYGdn/L+Z5tGtjGfprVgLXkYkBPWdeTbvlMLliZScssmAw7pzqob8MCmPJcLQfPm2CaYq0ObmU/ny8W26kO9ox1mYrPukWFYCmd9dXEPUz8Fda6KSapHRWXJBIxiaH9Es7Y78TLd3Ap0mQLS0v0YmelqjMvLPMbpSmJVzuoH3xBg5h22SU+Byw1+Vrnmi+1U2t6LOzkgm59P9Tl4IdtRncZ8Yi/7AjBUhzf8dFZpOgCZY4krZvL8LhiyMkET1bHqS0/DYk5uLuZC1Jr7qSZO0ndZUpoFiyzXNgkvtCwLMEDCsistaXA0rrt2hua7F83usuyCP5lZ318Mcl0+Daf7HLyyNoz+mkyxCPaLxFBXtfGL9L23LAyAlYc3t69UZeRDC1Xq/wy+1JSl6OzsmRwkKPBWnYaMys1U8yJtZPBdKkLdXVAj/KNaCG3io8fPsax1Jw1Qtdl0KfLtnI7UzL14mz29cNesU8I4c46HBrni9O/8s1rSSocP0MypgIyQCG7mF1/iLGI10aODC3XttQd6KWm+0rqg1mD95O2uLuXfSP9+reQnaTpLycpaTXmRD4ZVGaKydX6Xi3pGTJt9yKD8UwKhlFcejE8v5GD3YasZr+MKLLYOaLbtW6mtLvCsJxOJy6XC/f8Sbj1PSQS4L4PkhKTFe+RlGFqHhJJAav/+y1ic2hxhoklJC+szGM+7XkRZ/iw1lGuSnCtY/LeD7hxW8zgytglACtrRufPzJL/IqnwyFQ5z1EWG0OWncze9TQzCS83F/IbWzk77GAZo6BJn8fiWVkyLPGjSzsLnYESrEJndBnP+wc7ez/ge3dEYgAAAABJRU5ErkJggg==" width="107"/></li>
 <li>開啟 CMSimfly.leo</li>
@@ -181,6 +168,10 @@
 <ul>
 <li>原因：<span data-darkreader-inline-bgcolor="">&lt;![CDATA[ ]]&gt;</span> 的 tag 在 XML 執行程式的語法，但網頁轉為靜態後是 HTML ,因此在<span> </span><span data-darkreader-inline-bgcolor="">&lt;![CDATA[ ]]&gt;</span><span> 的 tag 前的斜線會變成註解，導致無法執行程式，所以在轉換成靜態的時候把 &lt;![CDATA[ ]]&gt; 替換成空字串，就可以順利執行程式</span></li>
 </ul>
+<p><!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
 <p><!-- 啟動 Brython -->
 <script>
 window.onload=function(){
@@ -244,5 +235,6 @@ ctx.closePath()
 ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
-</p><h1>期末報告</h1>
+</p><h2>開啟LEO</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/xOJ_EQOG2rY" width="560"></iframe>在cmd裡輸入 Y:python launchleo.py</p><h1>期末報告</h1>
 <p></p>
