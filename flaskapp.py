@@ -1673,6 +1673,8 @@ def savePage():
     """save all pages function"""
     page_content = request.form['page_content']
     # check if administrator
+    page_content = page_content.replace('// <![CDATA[', '')
+    page_content = page_content.replace('// ]]>', '')
     if not isAdmin():
         return redirect("/login")
     if page_content is None:
@@ -1973,6 +1975,8 @@ def sizeof_fmt(num):
 def ssavePage():
     """seperate save page function"""
     page_content = request.form['page_content']
+    page_content = page_content.replace('// <![CDATA[', '')
+    page_content = page_content.replace('// ]]>', '')
     page_order = request.form['page_order']
     if not isAdmin():
         return redirect("/login")
